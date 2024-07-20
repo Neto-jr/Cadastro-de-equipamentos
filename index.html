@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Equipamentos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="text-center mb-4">
+            <h1>Gerenciamento de Equipamentos</h1>
+        </header>
+        <main>
+            <section class="form-section mb-5">
+                <h2 class="text-center">Adicionar Novo Equipamento</h2>
+                <form id="equipamento-form">
+                    <div class="row g-3">
+                        <!-- Form Fields -->
+                        <!-- Use Bootstrap grid system to organize the form -->
+                        <div class="col-md-1">
+                            <label for="status" class="form-label">Status:</label>
+                            <input type="text" id="status" name="status" class="form-control" placeholder="Status" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="nome" class="form-label">Nome:</label>
+                            <input type="text" id="nomE" name="nomE" class="form-control" placeholder="Nome de usuario" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="empresa" class="form-label">Empresa:</label>
+                            <input type="text" id="empresa" name="empresa" class="form-control" placeholder="Nome da Empresa" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="unidade" class="form-label">Unidade:</label>
+                            <input type="text" id="unidade" name="unidade" class="form-control" placeholder="Filial" required>
+                        </div>
+                        <div class="col-md-1">
+                            <label for="setor" class="form-label">Setor:</label>
+                            <input type="text" id="setor" name="setor" class="form-control" placeholder="Setor" required>
+                        </div>
+                        <div class="col-md-1">
+                            <label for="secao" class="form-label">Seção:</label>
+                            <input type="text" id="secao" name="secao" class="form-control" placeholder="Seção" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="telefone" class="form-label">Telefone:</label>
+                            <input type="text" id="telefone" name="telefone" class="form-control" placeholder="Número de Telefone" required>
+                        </div>
+                        <div class="col-md-1">
+                            <label for="ramal" class="form-label">Ramal:</label>
+                            <input type="text" id="ramal" name="ramal" class="form-control" placeholder="Ramal" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="E-mail para Contato" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="equip" class="form-label">Equipamento:</label>
+                            <input type="text" id="equip" name="equip" class="form-control" placeholder="Equipamento" required>
+                        </div>
+                        <div class="col-md-1">
+                            <label for="marca" class="form-label">Marca:</label>
+                            <input type="text" id="marca" name="marca" class="form-control" placeholder="Marca" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="modelo" class="form-label">Modelo:</label>
+                            <input type="text" id="modelo" name="modelo" class="form-control" placeholder="Modelo do Equipamento" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="numeroSerie" class="form-label">Número de Série:</label>
+                            <input type="text" id="numeroSerie" name="numeroSerie" class="form-control" placeholder="Número de Série" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="processador" class="form-label">Processador:</label>
+                            <input type="text" id="processador" name="processador" class="form-control" placeholder="Tipo de Processador" required>
+                        </div>
+                        <div class="col-md-1">
+                            <label for="memoria" class="form-label">Memória:</label>
+                            <input type="text" id="memoria" name="memoria" class="form-control" placeholder="ex: 4GB" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="so" class="form-label">S.O:</label>
+                            <input type="text" id="so" name="so" class="form-control" placeholder="Ex: WIN 10 PRO" required>
+                        </div>
+                        <div class="col-md-1">
+                            <label for="pack" class="form-label">Pack:</label>
+                            <input type="text" id="pack" name="pack" class="form-control" placeholder="Pack" required>
+                        </div>
+                        <div class="col-md-1">
+                            <label for="disco" class="form-label">Disco:</label>
+                            <input type="text" id="disco" name="disco" class="form-control" placeholder="500GB" required>
+                        </div>
+                        <div class="col-md-1">
+                            <label for="tipo" class="form-label">Tipo:</label>
+                            <input type="text" id="tipo" name="tipo" class="form-control" placeholder="Ex: HD" required>
+                        </div>
+                        <div class="col-md-1">
+                            <label for="versao" class="form-label">Versão:</label>
+                            <input type="text" id="versao" name="versao" class="form-control" placeholder="Versão" required>
+                        </div>
+                        <div class="col-md-1">
+                            <label for="numeroPatrimonio" class="form-label">Patr.:</label>
+                            <input type="text" id="numeroPatrimonio" name="numeroPatrimonio" class="form-control" placeholder="12547" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="chaveWindows" class="form-label">Chave Windows:</label>
+                            <input type="text" id="chaveWindows" name="chaveWindows" class="form-control" placeholder="Chave do Windows" required>
+                        </div>
+                        <div class="col-md-1">
+                            <label for="winOrig" class="form-label">Win.Orig:</label>
+                            <input type="text" id="winOrig" name="winOrig" class="form-control" placeholder="Versão Original" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="versaoOffice" class="form-label">Versão Office:</label>
+                            <input type="text" id="versaoOffice" name="versaoOffice" class="form-control" placeholder="Versão do Office" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="tipoOffice" class="form-label">Tipo do Office:</label>
+                            <input type="text" id="tipoOffice" name="tipoOffice" class="form-control" placeholder="Tipo de Office" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="chaveOffice" class="form-label">Chave Office:</label>
+                            <input type="text" id="chaveOffice" name="chaveOffice" class="form-control" placeholder="Chave do Office" required>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="ip" class="form-label">IP:</label>
+                            <input type="text" id="ip" name="ip" class="form-control" placeholder="Endereço IP" required>
+                        </div>
+						<div class="col-md-2">
+                            <label for="proprietario" class="form-label">Proprietário:</label>
+                            <input type="text" id="proprietario" name="proprietario" class="form-control" placeholder="Proprietário" required>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="observacoes" class="form-label">Observações:</label>
+                            <textarea id="observacoes" name="observacoes" class="form-control" placeholder="Notas Adicionais"></textarea>
+                        </div>
+                        
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Adicionar Equipamento</button>
+                </form>
+            </section>
+            <section class="table-section">
+                <h2 class="text-center">Lista de Equipamentos</h2>
+                <table id="equipamentos-table" class="table table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Status</th>
+                            <th>NOM</th>
+                            <th>Empresa</th>
+                            <th>Unidade</th>
+                            <th>Setor</th>
+                            <th>Seção</th>
+                            <th>Telefone</th>
+                            <th>Ramal</th>
+                            <th>E-mail</th>
+                            <th>Equipamento</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Nº Série</th>
+                            <th>Processador</th>
+                            <th>Memória</th>
+                            <th>SO</th>
+                            <th>Pack</th>
+                            <th>Disco</th>
+                            <th>Tipo</th>
+                            <th>Versão</th>
+                            <th>Nº Patr.</th>
+                            <th>Chave Windows</th>
+                            <th>Win Orig.</th>
+                            <th>Versão Office</th>
+                            <th>Tipo do Office</th>
+                            <th>Chave Office</th>
+                            <th>IP</th>
+                            <th>Observações</th>
+                            <th>Proprietário</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="equipamentos-list">
+                        <!-- Equipamentos serão adicionados aqui -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer class="text-center mt-4">
+            <p>&copy; 2024 Gerenciamento de Equipamentos. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
